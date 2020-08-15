@@ -1,0 +1,130 @@
+html {
+    /* height: 100%; */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* Globales */
+
+body {
+    /* height: 100%; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+51,a849a3+100 */
+    background: #e570e7;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 51%, #a849a3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 51%, #a849a3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 51%, #a849a3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0);
+    /* IE6-9 */
+    font-size: 1.6rem;
+    background-attachment: fixed;
+    font-family: Arial, helvetica, sans-serif;
+    color: white;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Utilidades */
+
+.seccion {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/* botones */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 4rem;
+    background-color: #ffce00;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: #8001c3;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #EBBC00;
+}
+
+
+/* Header */
+
+.site-header {
+    text-align: center;
+    padding: 2.4rem 0;
+}
+
+
+/* Contenido Principal HOME */
+
+.contenido-principal {
+    text-align: center;
+}
+
+.contenido-principal h2 {
+    text-transform: uppercase;
+}
+
+.contenedor-productos {
+    display: grid;
+    gap: 4rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+@media (min-width:480px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:768px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto img {
+    border: 1rem solid rgba(128, 1, 195, .45);
+    transition: border .3s ease-in-out;
+}
+
+.producto img:hover {
+    border: 1rem solid rgba(128, 1, 195, 1);
+}
+
+.producto p {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+}
+
+.producto span {
+    font-size: 4rem;
+    color: #ffce00;
+}
